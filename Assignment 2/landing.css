@@ -62,7 +62,7 @@ header > div > a{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  animation: slideout  4s forwards, slideIn  4s forwards;
+  animation: slideIn  4s forwards infinite;
   animation-delay:  2s;
 }
 
