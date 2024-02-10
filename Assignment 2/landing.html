@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="landing.css">
+<title>Pizza Delight</title>
+</head>
+<body>
+    <header>
+        <span>Pizza Delight</span>
+        <span class="flame"></span>
+        <div>
+            <a href="#">Menu</a>
+            <a href="#specials">Specials</a>
+            <a href="#orders">Order Online</a>
+            <a href="#contact">Contact</a>
+            <svg width="18" height="18" fill="white" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 20a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                <path d="M20 20a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+        </div>
+    </header>
+    <section class="slider">
+        <img src="smallpizza.jpg" alt="small pizza" class="slider-image" style="width: 100%">
+    </section>
+<h1 class="today-heading" id="specials">Today's Specials</h1>
+<section class="pizza-specials">
+    <div class="card1">
+        <img src="smallpizza.jpg" alt="Supreme Pizza" style="width: 100%; border-radius: 3px;">
+        <div class="text">
+          <h4><b>Supreme Pizza</b></h4> 
+        </div>
+    </div>
+    <div class="card2">
+        <img src="smallpizza.jpg" alt="Margherita Pizza" style="width: 100%; border-radius: 3px;">
+        <div class="text">
+          <h4><b>Margherita Pizza</b></h4> 
+        </div>
+    </div>
+    <div class="card3">
+        <img src="smallpizza.jpg" alt="Veggie Delight Pizza" style="width: 100%; border-radius: 3px;">
+        <div class="text">
+          <h4><b>Veggie Delight Pizza</b></h4> 
+        </div>
+    </div>
+</section>
+
+<section class="testimonials" id="orders">
+    <h1>What our Customers Say</h1>
+    <q class="quotes">The best pizza in town!  The crust is so good and the toppings are always fresh.</q><br><span class="author">- John Doe</span><br>
+    <q class="quotes">Pizza Delight never dissappoints. Quick delivery and mouth-watering flavours. Highly recommended.</q><br><span class="author">- Jane Smith</span><br>
+</section>
+
+<section class="cta">
+    <h1>Ready to Order?</h1>
+    <h4>Experience the taste of perfection. Order now and enjoy a delightful pizza experience!</h4>
+    <button class="ordernow">Order Now</button>
+</section>
+
+<section class="three-columns">
+    <div class="info">
+        <h1>Quality Ingredients</h1>
+        <p>We use only the finest and freshest ingredients to craft our delicious pizzas.</p>
+    </div>
+    <div class="info">
+        <h1>Customization Options</h1>
+        <p>Customize your pizza with a variety of toppings, sauces, and crust options to suit your taste.</p>
+    </div>
+    <div class="info">
+        <h1>Fast Delivery</h1>
+        <p>Enjoy quick and reliable delivery services to savour your pizza at its best.</p>
+    </div>
+</section>
+
+<section class="contact-form" id="contact">
+    <div  class="form-group">
+        <form  method="get">
+            <h1>Contact Us</h1>
+            <label  for="name">Username: </label><br>
+            <input  type="text" id="username" name="username" placeholder="Afaq Ahmed" required><br>
+            <label  for="email">Your Email: </label><br>
+            <input  type="email" id="email" name="email" placeholder="example@example.com" required><br>
+            <label for="phonenumber" name="phonenumber">Your Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required><br>
+            <label for="message" name="message">Your Message:</label><br>
+            <textarea  id="msg" name="message" rows="6" cols="25"></textarea><br>
+            <input type="submit"  value="Submit"><br>
+            <input type="reset"
+            value="Reset">
+    
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>@2024 Pizza Delight.All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+header{
+    background-color: gray;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+.name-photo{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    padding-top: 10px;
+}
+img{
+  transform: scale(0.8);
+   padding-left: 20px;
+}
+.links{
+    display: inline-block;
+}
+.links > a{
+    color: white;
+    font-family: 'Poppins',sans-serif; 
+}
+.info{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 2px;
+}
+.info:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .info > h1{
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+  .info > p{
+    padding-left: 15px;
+    padding-bottom: 20px;
+  }
+  .info > ul{
+    padding-bottom: 20px;
+  }
+  .info > ul > li > span{
+    font-weight: bold;
+  }
+.projects{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 2px;
+}
+.projects:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .projects > h1{
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  .project-info > p,h2{
+    padding-left: 15px;
+  }
+  .view-details {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(52, 15, 238);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    width: 130px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+  .view-details:hover{
+    width: 150px;
+  }
+  
+  .view-details span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .view-details span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.5s;
+  }
+  
+  .view-details:hover span {
+    padding-right: 25px;
+  }
+  
+  .view-details:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  footer{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    margin: 0;
+  }
+  footer > p{
+    padding: 20px;
+    font-family: 'Poppins',sans-serif;
+  }
