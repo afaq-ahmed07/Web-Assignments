@@ -1,0 +1,348 @@
+*{
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+#logo{
+    font-size: 2.7rem;
+    font-weight: 800;
+    color:#19063c;
+}
+.links li{
+    padding-right: 30px;
+
+}
+.links a{
+    font-size: 1.8rem;
+    width: 60%;
+    color: black;
+    font-weight: 600;
+}
+.links li:hover{
+    border-bottom: 2px solid #0ef;
+}
+.links a:hover{
+    color: #0ef;
+}
+section{
+    min-height: 70vh;
+    padding: 5rem 5% 2rem;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: rgb(4, 13, 49);
+}
+.home-content span{
+    color: #0ef;
+}
+.home-content p{
+    font-size: 1.6rem;
+}
+.button{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    background: rgb(4, 13, 49);
+    font-weight: 600;
+}
+.button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.button svg:hover{
+    stroke: #0ef;
+}
+.home-img-div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.home-img-div img{
+    width: 35vw;
+    animation: floatImage 4s  ease-in-out infinite;
+}
+.img-back{
+    background: rgb(4, 13, 49);
+    z-index: -1;
+    padding: 10px;
+    border-radius: 15px;
+    padding-left: 5rem;
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+.services-content h1{
+    font-size: 5.6rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(4, 13, 49);
+}
+.services-content span{
+    color: #0ef;
+}
+.services-content p{
+    font-size: 1.6rem;
+}
+.learn-btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    background: rgb(4, 13, 49);
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;  
+}
+.learn-btn:hover {
+    color: #0ef;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+.service-container div{
+    background-color: whitesmoke;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    border-radius: 1.3rem;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    flex-basis: 36%;
+}
+.service-container div svg{
+    margin-bottom: 2rem;
+}
+.service-container span{
+    font-size: 1.2rem;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.about-content h1{
+    font-size: 5.6rem;
+    font-weight: 600;
+    color: rgb(4, 13, 49);
+    margin-top: 0;
+}
+.about-span1{
+    font-size: 2.6rem;
+}
+.about-span2{
+    color: #0ef;
+}
+.about-content p{
+    font-size: 1.6rem; 
+}
+.about-brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 250dvh;
+    height: 50dvh;
+} 
+.about-brands div{
+    flex-basis: 28%;
+    background-color: whitesmoke;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-top: 5rem;
+    border-radius: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-align: center;
+}
+.about-brands span{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    font-size: 1.5rem;
+}
+.netflix{
+    font-size: 1.7rem;
+}
+.footer{
+    background-color:#19063c;
+    border-radius: 6rem 6rem 0 0;
+}
+.footer h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: azure;
+}
+.footer p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: azure;
+}
+
+#contact{
+    width: 80%;
+    padding: 45px;
+    border-radius: 0;
+}
+.contact-body{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.contact-body h1{
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+.get-in-touch{
+    padding: 2rem;
+}
+.contact-us{
+    padding: 20px;
+}
+.form-control{
+    height: 5rem;
+    background: #fff;
+    color: #000;
+    font-size: large;
+    border-radius: 2px;
+    box-sizing: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.form-control::placeholder{
+    font-size: 1.3rem;
+}
+.form-label{
+    font-size: 2rem;
+}
+.bi{
+    font-size: 20px;
+}
+.contact-p p{
+    font-size: 2rem;
+    padding-left: 18px;
+}
+
+@media screen
+{
+    html {
+      font-size:55%;
+    }
+    .learn-btn{
+        text-decoration: none;
+    }
+}
+
+@media(max-width: 991px)
+{
+    #services{
+        flex-direction: column-reverse;
+    }
+    #about{
+        flex-direction: column;
+    }
+    .about-brands div{
+        flex-basis: 25%;
+    }
+    .learn-btn{
+        text-decoration: none;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+    #home{
+        flex-direction: column;
+      }
+      .home-content h3{
+        font-size: 2.6rem;
+      }
+    
+      .home-content h1{
+        font-size: 5rem;
+      }
+      .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+      }
+      #services{
+        flex-direction: column-reverse;
+      }
+      #about{
+        flex-direction: column;
+      }
+      .about-brands{
+        height: 70dvh;
+        width: 100dvh;
+        flex-direction: row;
+      }
+      .about-brands div{
+        flex-basis: 35%;
+      }
+      .about-brands{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .learn-btn{
+        text-decoration: none;
+    }
+}
+@media (max-width: 617px)
+{
+    .about-brands{
+        grid-template-columns: 1fr;
+    }
+    #contact{
+        width: 100%;
+    }
+}
+@media (max-width:450px)
+{
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 365px) {
+    .home-img img{
+        width: 90vw;
+    }
+}
