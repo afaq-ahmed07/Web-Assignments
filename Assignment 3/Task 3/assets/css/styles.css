@@ -219,11 +219,13 @@ section{
     width: 80%;
     padding: 45px;
     border-radius: 0;
+    background-color: white;
 }
 .contact-body{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
     padding: 2rem;
     border-radius: 2rem;
+    background-color: whitesmoke;
 }
 .contact-body h1{
     text-align: center;
@@ -238,7 +240,7 @@ section{
 }
 .form-control{
     height: 5rem;
-    background: #fff;
+    background: whitesmoke;
     color: #000;
     font-size: large;
     border-radius: 2px;
@@ -258,6 +260,10 @@ section{
 .contact-p p{
     font-size: 2rem;
     padding-left: 18px;
+}
+.send-btn{
+    font-size: 5rem;
+    font-weight: 400;
 }
 
 @media screen
