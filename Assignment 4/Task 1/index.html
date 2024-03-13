@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="text-center">Sign In</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="inputuser">Username</label>
+                        <input type="text" class="form-control" id="inputuser" placeholder="Enter Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-12 mb-2 d-none">
+                <h2 class="text-center">Sign Up</h2>
+            </div>
+            <div class="col-md-4 d-none">
+                <form class="signUpForm">
+                    <div class="form-group">
+                        <label for="inputfname">First Name</label>
+                        <input type="text" class="form-control" id="inputfname" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDOB">Date of Birth</label>
+                        <input type="date" class="form-control" id="inputDOB">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSPassword">Password</label>
+                        <input type="password" class="form-control" id="inputSPassword" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 d-none">
+                <form class="signUpForm">
+                    <div class="form-group">
+                        <label for="inputlname">Last Name</label>
+                        <input type="text" class="form-control" id="inputlname" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputcontact">Contact</label>
+                        <input type="number" class="form-control" id="inputcontact"  placeholder="Enter contact">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputaddress">Address</label>
+                        <input type="text" class="form-control" id="inputaddress" placeholder="Enter address">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="inputCPassword" placeholder="Password">
+                    </div>
+                </form>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
