@@ -1,3 +1,77 @@
-.container{
-    margin-top: 100px;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  margin-top: 100px;
+  background-color: #424769;
+  height: fit-content;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.facebook{
+    margin-left: 4rem;
+}
+.facebook,.twitter,.linkedin{
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+.img-div {
+  background: url(download.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80dvh;
+  width: 70%;
+  border-radius: 0px 20px 20px 0px;
+}
+.img-content{
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 20px;
+}
+h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+label {
+  color: #c2c7c2;
+  font-weight: 400;
+}
+.submit {
+  background-color: #ffb17a;
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #2d3250;
+  transition: all 1s;
+}
+.submit:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#sign-in-inputs {
+  background: rgba(255, 255, 255, 0.091);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+#sign-in-inputs::placeholder {
+  color: #ffffff;
+  font-size: small;
+}
+.submit-2 {
+  margin-left: 120px;
+  margin-bottom: 10px;
+}
+.on-img {
+  color: #ffffff;
 }

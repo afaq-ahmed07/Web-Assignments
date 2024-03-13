@@ -10,43 +10,73 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container">
+<body style="background-color: #2d3250;">
+    <div class="container w-75">
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                <h2 class="text-center">Sign In</h2>
-                <form>
+            <div class="col-md-6 mt-5">
+                <h2 class="text-center m-3">Sign In</h2>
+                <form class="ml-5 mt-5 signInForm">
                     <div class="form-group">
                         <label for="inputuser">Username</label>
-                        <input type="text" class="form-control" id="inputuser" placeholder="Enter Username">
+                        <input type="text" id="sign-in-inputs" class="form-control w-75" id="inputuser"
+                            placeholder="Enter Username">
                     </div>
                     <div class="form-group">
                         <label for="inputPassword">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        <input type="password" id="sign-in-inputs" class="form-control w-75" id="inputPassword"
+                            placeholder="Enter Password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="submit sign-in">Sign In</button>
                 </form>
+                <a href="www.facebook.com"><svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="40"
+                        height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
+                        <path
+                            d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z">
+                        </path>
+                    </svg></a>
+                <a href="www.twitter.com"><svg class="twitter" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
+                        <path
+                            d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                        </path>
+                    </svg></a>
+                <a href=""><svg class="linkedin" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);">
+                        <path
+                            d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                        </path>
+                    </svg></a>
             </div>
-            <div class="col-md-12 mb-2 d-none">
+            <div class="col-md-6 img-div d-flex flex-column justify-content-center align-items-center">
+                <div class="img-content text-center">
+                    <h2 class="on-img">Welcome!</h2>
+                    <h2 class="on-img">Don't have account.</h2>
+                    <button type="button" class="sign-up submit">Sign Up</button>
+                </div>
+            </div>
+            <div class="col-md-12 mb-2 mt-5 d-none">
                 <h2 class="text-center">Sign Up</h2>
             </div>
-            <div class="col-md-4 d-none">
-                <form class="signUpForm">
+            <div class="col-md-4">
+                <form class="signUpForm d-none">
                     <div class="form-group">
                         <label for="inputfname">First Name</label>
-                        <input type="text" class="form-control" id="inputfname" placeholder="Enter name">
+                        <input type="text" id="sign-in-inputs" class="form-control" id="inputfname"
+                            placeholder="Enter name">
                     </div>
                     <div class="form-group">
                         <label for="inputDOB">Date of Birth</label>
-                        <input type="date" class="form-control" id="inputDOB">
+                        <input type="date" id="sign-in-inputs" class="form-control" id="inputDOB">
                     </div>
                     <div class="form-group">
                         <label for="inputEmail">Email address</label>
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="email" id="sign-in-inputs" class="form-control" id="inputEmail"
+                            aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="form-group">
                         <label for="inputSPassword">Password</label>
-                        <input type="password" class="form-control" id="inputSPassword" placeholder="Password">
+                        <input type="password" id="sign-in-inputs" class="form-control" id="inputSPassword"
+                            placeholder="Password">
                     </div>
                 </form>
             </div>
@@ -54,23 +84,27 @@
                 <form class="signUpForm">
                     <div class="form-group">
                         <label for="inputlname">Last Name</label>
-                        <input type="text" class="form-control" id="inputlname" placeholder="Enter name">
+                        <input type="text" id="sign-in-inputs" class="form-control" id="inputlname"
+                            placeholder="Enter name">
                     </div>
                     <div class="form-group">
                         <label for="inputcontact">Contact</label>
-                        <input type="number" class="form-control" id="inputcontact"  placeholder="Enter contact">
+                        <input type="number" id="sign-in-inputs" class="form-control" id="inputcontact"
+                            placeholder="Enter contact">
                     </div>
                     <div class="form-group">
                         <label for="inputaddress">Address</label>
-                        <input type="text" class="form-control" id="inputaddress" placeholder="Enter address">
+                        <input type="text" id="sign-in-inputs" class="form-control" id="inputaddress"
+                            placeholder="Enter address">
                     </div>
                     <div class="form-group">
                         <label for="inputCPassword">Confirm Password</label>
-                        <input type="password" class="form-control" id="inputCPassword" placeholder="Password">
+                        <input type="password" id="sign-in-inputs" class="form-control" id="inputCPassword"
+                            placeholder="Password">
                     </div>
                 </form>
                 <div class="col-md-6">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="submit submit-2">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -78,7 +112,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 

@@ -6,7 +6,7 @@ $(document).ready(function () {
     const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
     const contactRegex = /^\d+$/;
 
-    $('button[type="submit"]').on('click', function (event) {
+    $('.submit-2').on('click', function (event) {
         event.preventDefault();
 
         if (!nameRegex.test($('#inputfname').val())) {
@@ -52,6 +52,21 @@ $(document).ready(function () {
         alert('Form submitted successfully!');
         $('.signUpForm')[0].reset();
         $('.signUpForm')[1].reset();
+        return true;
+    });
+
+    $('.sign-in').on('click', function (event) {
+        event.preventDefault();
+        if (!nameRegex.test($('#inputuser').val())) {
+            alert('Please enter a valid Username.');
+            return false;
+        }
+        if (!passwordRegex.test( $('#inputPassword').val())) {
+            alert('Password must contain at least 8 characters, including a number and a special character.');
+            return false;
+        }
+        alert('Form submitted successfully!');
+        $('.signInForm')[0].reset();
         return true;
     });
 });
