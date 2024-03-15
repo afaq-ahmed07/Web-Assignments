@@ -25,6 +25,9 @@
   height: 80dvh;
   width: 70%;
   border-radius: 0px 20px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-content{
     background: rgba(255, 255, 255, 0);
@@ -57,21 +60,17 @@ label {
 .submit:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#sign-in-inputs {
-  background: rgba(255, 255, 255, 0.091);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-}
-#sign-in-inputs::placeholder {
-  color: #ffffff;
-  font-size: small;
-}
 .submit-2 {
-  margin-left: 120px;
-  margin-bottom: 10px;
+  margin-left: 150px;
+  margin-bottom: 20px;
 }
 .on-img {
   color: #ffffff;
+}
+.back-svg{
+  transition: all 1s;
+  color: #2d3250;
+}
+.back-svg:hover {
+  fill:#ffb17a;
 }
