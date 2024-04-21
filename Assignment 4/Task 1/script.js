@@ -2,7 +2,7 @@ $(document).ready(function () {
     const nameRegex =/^[a-zA-Z]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
-    const contactRegex = /^\d+$/;
+    const contactRegex = /^\d{11}$/;
     $('.sign-up-div').hide();
     $('.sign-up').on('click', function (event) {
         event.preventDefault();
